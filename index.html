@@ -1,1 +1,307 @@
-Hello world
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="icon" href="./favicon.ico">
+</head>
+	<body>
+		<section id="menu-section">
+			<section id="music" class="section"><h2>Music</h2></section>
+			<section id="mts" class="section"><h2>Moovies/</br>Series</h2></section>
+			<section id="socials" class="section"><h2>Social networks</h2></section>
+			<section id="hobbies" class="section"><h2>Hobbies</h2></section>
+			<section id="dev" class="section"><h2><span class="arrow">&lt;</span>Dev<span class="arrow">&gt;</span></h2></section>
+		</section>
+
+		<section id="music-section" class="hidden">
+			<div id="spotify-animation">
+				<div id="wrapper">
+				  <svg xmlns="http://www.w3.org/2000/svg" width="559" height="168" viewBox="0 0 559 168" id="spotify--logo">
+				    <g id="logo--circle">
+				      <path id="logo--circle_1_" d="M84,0.3L84,0.3C37.7,0.3,0.3,37.8,0.3,84c0,46.3,37.5,83.7,83.7,83.7
+				        c46.3,0,83.7-37.5,83.7-83.7C167.7,37.8,130.2,0.3,84,0.3z"/>
+				      <path class="logo--circle--bar" id="logo--circle--bar-1" d="M41.7,114.7c29.2-6.7,53.9-3.9,73.6,8.1c2.5,1.5,5.7,0.7,7.2-1.7
+				        c1.5-2.5,0.7-5.7-1.7-7.2c-22.1-13.5-49.4-16.6-81.3-9.3c-2.8,0.6-4.6,3.4-3.9,6.2C36,113.6,38.8,115.4,41.7,114.7z"/>
+				      <path class="logo--circle--bar" id="logo--circle--bar-2" d="M130.5,89.3c-25.8-15.9-63.7-20.4-94.1-11.1c-3.4,1-5.4,4.7-4.4,8.1
+				        c1,3.4,4.7,5.4,8.1,4.3c26.6-8.1,60.9-4.1,83.4,9.8c3.1,1.9,7.1,0.9,9-2.2v0C134.5,95.2,133.6,91.2,130.5,89.3z"/>
+				      <path class="logo--circle--bar" id="logo--circle--bar-3" d="M144.3,71.8c2.2-3.7,1-8.5-2.7-10.7C110.5,42.6,61.3,40.9,31.7,49.8
+				        c-4.1,1.3-6.5,5.6-5.2,9.8c1.3,4.1,5.6,6.5,9.8,5.2c25.8-7.8,70.3-6.3,97.3,9.7h0C137.2,76.7,142.1,75.5,144.3,71.8z"/>
+				    </g>
+				    <g id="logo--name">
+				      <path id="logo--name--s" d="M228.1,77.6L228.1,77.6c-14.5-3.5-17.1-5.9-17.1-11c0-4.8,4.5-8,11.2-8
+				        c6.5,0,13,2.5,19.8,7.5c0.2,0.2,0.5,0.2,0.7,0.2c0.3,0,0.5-0.2,0.6-0.4l7.1-10c0.3-0.4,0.2-1-0.2-1.3c-8.1-6.5-17.2-9.6-27.8-9.6
+				        c-15.6,0-26.5,9.4-26.5,22.8c0,14.4,9.4,19.5,25.7,23.4c13.8,3.2,16.2,5.9,16.2,10.6c0,5.3-4.7,8.6-12.3,8.6
+				        c-8.4,0-15.3-2.8-23-9.5c-0.2-0.2-0.5-0.2-0.7-0.2c-0.3,0-0.5,0.1-0.6,0.3l-7.9,9.4c-0.3,0.4-0.3,1,0.1,1.3c9,8,20,12.2,31.9,12.2
+				        c16.8,0,27.7-9.2,27.7-23.4C252.9,88.5,245.7,81.9,228.1,77.6z"/>
+				      <path id="logo--name--p" d="M291,63.3L291,63.3c-7.3,0-13.3,2.9-18.2,8.8v-6.6c0-0.5-0.4-0.9-0.9-0.9h-13
+				        c-0.5,0-0.9,0.4-0.9,0.9v73.6c0,0.5,0.4,1,0.9,1h13c0.5,0,0.9-0.4,0.9-1v-23.2c4.9,5.5,10.9,8.2,18.2,8.2
+				        c13.5,0,27.3-10.4,27.3-30.4C318.2,73.8,304.5,63.3,291,63.3z M303.2,93.7c0,10.1-6.2,17.2-15.2,17.2c-8.8,0-15.5-7.4-15.5-17.2
+				        c0-9.8,6.7-17.2,15.5-17.2C296.8,76.5,303.2,83.7,303.2,93.7L303.2,93.7z"/>
+				      <path id="logo--name--o" d="M353.4,63.3L353.4,63.3c-17.5,0-31.1,13.4-31.1,30.6c0,17,13.6,30.3,30.9,30.3
+				        c17.5,0,31.2-13.4,31.2-30.5C384.4,76.7,370.8,63.3,353.4,63.3z M353.4,111c-9.3,0-16.3-7.5-16.3-17.3c0-9.9,6.8-17.1,16.1-17.1
+				        c9.3,0,16.4,7.5,16.4,17.4C369.5,103.8,362.7,111,353.4,111z"/>
+				      <path id="logo--name--t" d="M421.6,64.5L421.6,64.5l-14.3,0V49.9c0-0.5-0.4-0.9-0.9-0.9h-13c-0.5,0-1,0.4-1,0.9v14.6
+				        h-6.2c-0.5,0-0.9,0.4-0.9,0.9v11.1c0,0.5,0.4,0.9,0.9,0.9h6.2v28.8c0,11.6,5.8,17.5,17.2,17.5c4.6,0,8.5-1,12.1-3
+				        c0.3-0.2,0.5-0.5,0.5-0.8v-10.6c0-0.3-0.2-0.6-0.5-0.8c-0.3-0.2-0.6-0.2-0.9,0c-2.5,1.2-4.9,1.8-7.6,1.8c-4.2,0-6-1.9-6-6.1V77.5
+				        h14.2c0.5,0,0.9-0.4,0.9-0.9V65.5C422.6,64.9,422.2,64.5,421.6,64.5z"/>
+				      <g id="logo--name--i">
+				        <path id="logo--name--i-stem" d="M442.5,64.5L442.5,64.5l-13,0c-0.5,0-1,0.4-1,0.9v56.5c0,0.5,0.4,0.9,1,0.9h13
+				          c0.5,0,1-0.4,1-0.9V65.5C443.5,64.9,443,64.5,442.5,64.5z"/>
+				        <path id="logo--name--i-dot" d="M436.1,38.8c-5.1,0-9.3,4.2-9.3,9.3c0,5.1,4.2,9.3,9.3,9.3s9.3-4.2,9.3-9.3
+				          C445.4,42.9,441.2,38.8,436.1,38.8z"/>
+				      </g>
+				      <path id="logo--name--fy" d="M537.6,64.6h-13.5c-0.4,0-0.8,0.3-0.9,0.6l-13.8,39.4l-15.1-39.5
+				        c-0.1-0.4-0.5-0.6-0.9-0.6h-22.1v0l0,0v-1.8c0-5.3,2-7.6,6.5-7.6c2.7,0,4.9,0.5,7.3,1.3c0.3,0.1,0.6,0,0.8-0.1
+				        c0.2-0.2,0.4-0.5,0.4-0.8V44.7c0-0.4-0.3-0.8-0.7-0.9c-2.6-0.8-5.8-1.5-10.8-1.5c-12,0-18.3,6.7-18.3,19.5v2.7h-6.2
+				        c-0.5,0-1,0.4-1,0.9v11.2c0,0.5,0.4,0.9,1,0.9h6.2v44.4c0,0.5,0.4,0.9,1,0.9h12.9c0.5,0,1-0.4,1-0.9V77.5h12.1l18.5,44.4
+				        c-2.1,4.7-4.2,5.6-7,5.6c-2.3,0-4.7-0.7-7.1-2c-0.2-0.1-0.5-0.1-0.8-0.1c-0.2,0.1-0.5,0.3-0.6,0.5l-4.4,9.6c-0.2,0.5,0,1,0.4,1.2
+				        c4.6,2.5,8.7,3.5,13.8,3.5c9.6,0,14.8-4.5,19.5-16.4l22.5-58c0.1-0.3,0.1-0.6-0.1-0.9C538.2,64.7,537.9,64.6,537.6,64.6z"/>
+				      <g id="logo--name--registered">
+				        <path id="logo--name--registered-r_1_" d="M551.6,74.4c1.3-0.4,2.2-1.3,2.2-2.9c0-1.9-1.5-3.1-3.7-3.1h-4.3V78h1.8
+				          v-3.3h2L552,78h2.2L551.6,74.4L551.6,74.4z M550,73.2h-2.4v-3h2.4c1.2,0,1.9,0.5,1.9,1.5C551.9,72.6,551.2,73.2,550,73.2z"/>
+				        <path id="logo--name--registered-r-circle" d="M549.6,64.4c-5.1,0-9.2,4.2-9.2,9.2c0,5,4,9.1,9.1,9.1
+				          c5.1,0,9.2-4.2,9.2-9.2C558.7,68.5,554.7,64.4,549.6,64.4z M549.5,81.8c-4.6,0-8.2-3.7-8.2-8.2c0-4.5,3.5-8.3,8.2-8.3
+				          c4.6,0,8.2,3.7,8.2,8.2C557.7,78,554.2,81.8,549.5,81.8z"/>
+				      </g>
+				    </g>
+				  </svg>
+				</div>
+			</div>
+			<h3>Liste de mes artistes du moment</h3>
+			<ul>
+				<li>Orelsan
+					<ul>
+						<li>Civilisation</li>
+						<li>Shonen</li>
+						<li>San</li>
+						<li>Epilogue</li>
+						<li>Raelsan</li>
+						<li>Le chant des sirènes</li>
+						<li>1990</li>
+						<li>Suicide social</li>
+						<li>Perdu d'avance</li>
+						<li>Jimmy Punchline</li>
+					</ul>
+				</li>
+				<li>Casseurs Flowters
+					<ul>
+						<li>Venu pour flowter</li>
+						<li>Stupide ¡ Stupide ¡ Stupide ¡</li>
+						<li>Fais les backs</li>
+						<li>Ils sont cools</li>
+						<li>Deux connards dans un abribus</li>
+						<li>Freestyle Radio Phoenix</li>
+					</ul>
+				</li>
+				<li>Vald
+					<ul>
+						<li>Sushi</li>
+						<li>Pandémie</li>
+						<li>Paw</li>
+						<li>Regarde-toi</li>
+						<li>Désaccordé</li>
+						<li>Rechute</li>
+						<li>Envie</li>
+						<li>Si j'arrêtais</li>
+						<li>L.D.S</li>
+						<li>Megadose</li>
+						<li>Laisse tomber</li>
+						<li>Neo</li>
+						<li>Eurotrap</li>
+						<li>Petite chatte</li>
+						<li>Strip</li>
+						<li>Kid Cudi</li>
+						<li>Primitif</li>
+						<li>YAX3</li>
+						<li>Possédé</li>
+						<li>Journal Perso</li>
+						<li>Blanc</li>
+						<li>No Friends</li>
+						<li>Baby Squirt</li>
+						<li>Sombre soirée</li>
+						<li>Non stop</li>
+						<li>Peon - Peon (feat Orelsan)</li>
+					</ul>
+				</li>
+				<li>Alpha Wann
+					<ul>
+						<li>philly flingo</li>
+						<li>ny à fond</li>
+						<li>aaa</li>
+						<li>Pistolet Rose 2 - A COLORS SHOW</li>
+						<li>PLAYOFFS</li>
+						<li>STUPÉFIANT ET NOIR</li>
+						<li>CASCADE - Remix</li>
+						<li>LANGAGE CRYPTÉ</li>
+						<li>ÇA VA ENSEMBLE</li>
+						<li>UNE MAIN LAVE L'AUTRE</li>
+					</ul>
+				</li>
+				<li>Freeze Corleone
+					<ul>
+						<li>Jeremy Lin</li>
+						<li>Rap catéchisme</li>
+						<li>Règne sur le monde</li>
+						<li>Big Pharma</li>
+						<li>Polémique (feat Central Cee)</li>
+						<li>Desiigner - A COLORS SHOW</li>
+						<li>Fentanyl</li>
+						<li>Freeze Raël</li>
+						<li>Hors ligne</li>
+						<li>Scellé part.2</li>
+						<li>Tarkov</li>
+						<li>Téléphone - Extrait de CRCLR MVT</li>
+					</ul>
+				</li>
+				<li>Laylow
+					<ul>
+						<li>MEGATRON</li>
+						<li>DEHORS DANS LA NIGHT</li>
+						<li>Vent de l'est</li>
+						<li>TRINITYVILLE</li>
+						<li>VAMONOS (feat. Alpha Wann)</li>
+						<li>BURNING MAN (feat. Lomepal)</li>
+						<li>LONGUE VIE...</li>
+						<li>SPECIAL (feat. Nekfeu & Fousheé)</li>
+						<li>LOST FOREST</li>
+						<li>STUNTMEN (feat. Alpha Wann & Wit.)</li>
+						<li>HELP !!!</li>
+						<li>VOIR LE MONDE BRÛLER</li>
+						<li>R9R-LINE (feat. Damso)</li>
+					</ul>
+				</li>
+				<li>Damso
+					<ul>
+						<li>911</li>
+						<li>Ο. OG</li>
+						<li>COEUR EN MIETTE</li>
+						<li>BXL ZOO</li>
+						<li>SENTIMENTAL</li>
+						<li>Π. VANTABLACK</li>
+						<li>Σ. MOROSE</li>
+					</ul>
+				</li>
+				<li>Columbine
+					<ul>
+						<li>Adieu bientôt</li>
+						<li>Bateau ivre</li>
+						<li>Biographie</li>
+						<li>Vicomte</li>
+						<li>Zone 51</li>
+						<li>Clubbing for Columbine</li>
+						<li>Document 1</li>
+						<li>Dom Pérignon</li>
+						<li>Le bal des fous</li>
+						<li>Les prélis</li>
+						<li>Main propre</li>
+						<li>Rémi</li>
+						<li>Stockholm</li>
+						<li>Temps électrique</li>
+						<li>Virgin Suicide</li>
+					</ul>
+				</li>
+				<li>Lomepal
+					<ul>
+						<li>Auburn</li>
+						<li>Tee</li>
+						<li>Flash</li>
+						<li>Montfermeil</li>
+						<li>Ego</li>
+						<li>Tout lâcher - Colors Session</li>
+						<li>Bécane</li>
+						<li>Avion</li>
+						<li>Malaise</li>
+						<li>Ray Liotta</li>
+						<li>Majesté</li>
+						<li>Je sors pas</li>
+						<li>Le Singe Fume Sa Cigarette (feat. Nekfeu, Alpha Wann, Jeanjass, Walter, Kéroué, Seven, Ysha & Senamo)</li>
+					</ul>
+				</li>
+				<li>Nepal
+					<ul>
+						<li>Opening</li>
+						<li>Ennemis, Pt. 2</li>
+						<li>Cheddar</li>
+						<li>En face</li>
+						<li>Trajectoire</li>
+						<li>Vibe</li>
+						<li>Lemonade</li>
+						<li>Là-bas</li>
+						<li>Sundance</li>
+						<li>Millionaire</li>
+						<li>Sans voir</li>
+						<li>Crossfader</li>
+						<li>Daruma</li></li>
+						<li>Benji</li></li>
+						<li>Cheddar</li></li>
+						<li>Coach K</li></li>
+						<li>Niveau 1</li>
+						<li>Rien d'spécial</li>
+						<li>Jugements (feat. 3010)</li>
+						<li>Babylone</li>
+						<li>150CC (feat. Gracy Hopkins)</li>
+						<li>Overdab (feat. Fixpen Sill & Waltmann)</li>
+						<li>Deadpornstars (feat. Doums)</li>
+						<li>Skyclub</li>
+						<li>444 nuits</li>
+						<li>Emoji</li>
+						<li>Kodak White</li>
+						<li>Cloud 8</li>
+						<li>Malik al mawt</li>
+						<li>Suga Suga (feat. Doums)</li>
+					</ul>
+				</li>
+				<li>Nekfeu
+					<ul>
+						<li>Humanoïde</li>
+						<li>Mauvaise graine</li>
+						<li>Sous les nuages</li>
+						<li>À la base</li>
+						<li>Squa</li>
+						<li>Esquimaux (feat. Nepal)</li>
+						<li>De mon mieux</li>
+						<li>Jeux vidéo et débats</li>
+						<li>Le regard des gens (feat. Némir, 2zer Washington, Mekra & Doums)</li>
+						<li>Nekketsu (featuring Crystal Kay)</li>
+						<li>Cheum</li>
+						<li>Koala mouillé</li>
+						<li>Ολά Καλά</li>
+						<li>Pixels (featuring Crystal Kay)</li>
+						<li>Menteur menteur</li>
+						<li>Elle pleut (featuring Nemir)</li>
+						<li>Dans l'univers (featuring Vanessa Paradis)</li>
+						<li>Martin Eden</li>
+						<li>Nique les clones, Pt. II</li>
+						<li>Tempête</li>
+						<li>Ma dope</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+
+		<section id="mts-section" class="hidden">
+			<p>MTS</p>
+		</section>
+
+		<section id="socials-section" class="hidden">
+			<p>Socials</p>
+		</section>
+
+		<section id="hobbies-section" class="hidden">
+			<p>Hobbies</p>
+		</section>
+
+		<section id="dev-section" class="hidden">
+			<p>Dev</p>
+		</section>
+	</body>
+	<script type="text/javascript" src="./script.js"></script>
+</html>

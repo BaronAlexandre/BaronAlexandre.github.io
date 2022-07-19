@@ -1,0 +1,226 @@
+@font-face {
+    font-family: RoadRage;
+    src: url("./Road_Rage.otf") format("opentype");
+}
+@media only screen and (max-width: 767.98px) {
+	#menu-section{
+		flex-direction: column;
+	}
+	.section{
+		width: 100%;
+		background-size: cover;
+		vertical-align: text-top;
+	}
+	.section > h2{
+		margin: 0;
+		position: relative;
+		top: 25%;
+	}
+	#music{
+		background-position: 50% 30%;
+	}
+	#hobbies{
+		background-position: top;
+	}
+}
+
+@media only screen and (min-width: 767.98px) {
+	.section{
+		width: calc(100%/5);
+		background-size: auto 100%;
+		padding-top: 50px;
+	}
+}
+
+html, body, #menu-section{
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#menu-section{
+	display: flex;
+	margin: 0;
+	padding: 0;
+	background-color: gray;
+}
+
+#music{
+	background-image: url("./music.jpg");
+}
+#music > h2 {
+	font-family: 'RoadRage', monospace;
+}
+#dev{
+	background-image: url("./dev.jpg");
+}
+#dev > h2{
+	font-family: 'Ubuntu Mono', monospace;
+	background-color: black;
+	color: #e62474;
+}
+.arrow{
+	color: white;
+}
+
+#hobbies{
+	background-image: url("./hobbies.jpg");
+}
+#hobbies > h2 {
+	font-family: 'Graduate', monospace;
+	color: black;
+	text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+#mts{
+	background-image: url("./mts.jpg");
+}
+#mts > h2 {
+	font-family: 'Bebas Neue', monospace;
+	color: #E50914;
+	letter-spacing: 5px;
+	text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+#socials{
+	background-image: url("./socials.jpg");
+}
+#socials > h2 {
+	  box-sizing: content-box;
+	  border: none;
+	  font: normal 50px/normal Helvetica, sans-serif;
+	  color: rgb(51, 51, 51);
+	  text-align: center;
+	  text-overflow: clip;
+	  letter-spacing: 3px;
+	  text-shadow: -3px 0 1px rgb(30,242,241) , 3px 0 1px rgb(246,5,10) ;
+}
+
+body:hover .section:not(:hover){
+	filter: brightness(0.5);
+}
+.section:hover {
+	transform: scale(0.8);
+	overflow: hidden;
+	box-shadow: 0 0 100px white;
+}
+.section {
+  	transition: transform .4s;
+	color: white;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	flex: 1;
+	font-size: 2em;
+	cursor: pointer;
+}
+.section > h2 {
+	width: fit-content;
+	margin: auto;
+	padding: 5px;
+}
+
+.hidden{
+	display: none !important;
+}
+
+
+/*
+*
+* Start Spotify Logo
+*
+*/
+#spotify-animation{
+	position: sticky;
+	top: 25%;
+	height: 0;
+}
+
+@keyframes scale-to-full {
+  0%, 1% {
+    transform: scale(0);
+  }
+  70%, 100% {
+    transform: scale(1);
+  }
+}
+@keyframes show-bars {
+  0%, 30% {
+    opacity: 0;
+    transform: scaley(0.78);
+  }
+  70%, 92.8% {
+    opacity: 1;
+    transform: scaley(1);
+  }
+  93%, 100% {
+    opacity: 0;
+    transform: scaley(0.78);
+  }
+}
+@keyframes dash {
+  0% {
+    fill-opacity: 0;
+    stroke-width: 1px;
+  }
+  37% {
+    fill-opacity: 0;
+  }
+  50% {
+    stroke-width: 1px;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+  }
+}
+#wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#wrapper svg {
+  max-width: 90vw;
+  width: auto;
+}
+#logo--circle {
+  animation: dash 4s 1, scale-to-full 4s 1;
+  fill: #1ED760;
+  stroke: #1ED760;
+  stroke-dasharray: 90;
+  stroke-dashoffset: 90;
+  transform-origin: 84px 50%;
+  transition: fill-opacity 0.3s ease, transform 0.1s ease;
+}
+#logo--circle .logo--circle--bar {
+  animation: show-bars 4s infinite;
+  fill: white;
+  opacity: 0;
+  transform: scaley(0.78);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+#logo--circle #logo--circle--bar-1 {
+  animation-delay: 0.25s;
+}
+#logo--circle #logo--circle--bar-2 {
+  animation-delay: 0.7s;
+}
+#logo--circle #logo--circle--bar-3 {
+  animation-delay: 1s;
+}
+#logo--name path {
+  animation: dash 4s 1;
+  fill: #1ED760;
+  stroke: #1ED760;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  transition: fill-opacity 0.3s ease;
+}
+
+/*
+*
+* End Spotify Logo
+*
+*/
