@@ -11,6 +11,7 @@ const devSection = document.getElementById('dev-section');
 const musicSection = document.getElementById('music-section');
 const mtsSection = document.getElementById('mts-section');
 const socialsSection = document.getElementById('socials-section');
+const navigationSection = document.getElementById('navigation-section');
 
 hobbies.onclick = function() { showSection(hobbiesSection); }
 dev.onclick = function() { showSection(devSection); }
@@ -19,7 +20,7 @@ mts.onclick = function() { showSection(mtsSection); }
 socials.onclick = function() { showSection(socialsSection); }
 
 showSection = (element) => {
-	let els = [hobbiesSection, menuSection, devSection, musicSection, mtsSection, socialsSection];
+	let els = [hobbiesSection, navigationSection, menuSection, devSection, musicSection, mtsSection, socialsSection];
     for(var i = 0; i < els.length; i++)
     {
     	if (!els[i].classList.contains('hidden')) {
@@ -29,7 +30,14 @@ showSection = (element) => {
 		  const box = document.getElementById('spotify-animation');
 		  box.style.display = 'none';
 		}, 3900);
-		
     }
+	
+	if(els[i] != menuSection && navigationSection.classList.contains('hidden')){
+		navigationSection.classList.remove('hidden');
+		console.log("yes");		
+	}else{
+		navigationSection.classList.add('hidden');
+		console.log("no");		
+	}
     element.classList.remove('hidden');
  }

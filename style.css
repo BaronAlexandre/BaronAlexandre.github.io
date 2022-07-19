@@ -2,7 +2,7 @@
     font-family: RoadRage;
     src: url("./Road_Rage.otf") format("opentype");
 }
-@media only screen and (max-width: 767.98px) {
+@media (max-width: 415px) {
 	#menu-section{
 		flex-direction: column;
 	}
@@ -24,7 +24,7 @@
 	}
 }
 
-@media only screen and (min-width: 767.98px) {
+@media (min-width: 415px) {
 	.section{
 		width: calc(100%/5);
 		background-size: auto 100%;
@@ -50,13 +50,13 @@ body {
 #music{
 	background-image: url("./music.jpg");
 }
-#music > h2 {
+#music-menu {
 	font-family: 'RoadRage', monospace;
 }
 #dev{
 	background-image: url("./dev.jpg");
 }
-#dev > h2{
+#dev-menu {
 	font-family: 'Ubuntu Mono', monospace;
 	background-color: black;
 	color: #e62474;
@@ -68,7 +68,7 @@ body {
 #hobbies{
 	background-image: url("./hobbies.jpg");
 }
-#hobbies > h2 {
+#hobbies-menu {
 	font-family: 'Graduate', monospace;
 	color: black;
 	text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
@@ -76,7 +76,7 @@ body {
 #mts{
 	background-image: url("./mts.jpg");
 }
-#mts > h2 {
+#mts-menu {
 	font-family: 'Bebas Neue', monospace;
 	color: #E50914;
 	letter-spacing: 5px;
@@ -85,10 +85,10 @@ body {
 #socials{
 	background-image: url("./socials.jpg");
 }
-#socials > h2 {
+#socials-menu {
 	  box-sizing: content-box;
 	  border: none;
-	  font: normal 50px/normal Helvetica, sans-serif;
+	  font-family: 'Helvetica', sans-serif;
 	  color: rgb(51, 51, 51);
 	  text-align: center;
 	  text-overflow: clip;
@@ -125,6 +125,27 @@ body:hover .section:not(:hover){
 	display: none !important;
 }
 
+#navigation-section{
+	display: flex;
+	justify-content: space-around;
+	box-shadow: gray 0px 10px 100px;
+}
+
+/*
+*
+* Start Music Section
+*
+*/
+
+#music-section ul img{
+	max-width: 15em;
+}
+
+/*
+*
+* End Music Section
+*
+*/
 
 /*
 *
