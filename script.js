@@ -13,11 +13,24 @@ const mtsSection = document.getElementById('mts-section');
 const socialsSection = document.getElementById('socials-section');
 const navigationSection = document.getElementById('navigation-section');
 
+const hobbiesNavigation = document.getElementById('hobbies-navigation');
+const devNavigation = document.getElementById('dev-navigation');
+const musicNavigation = document.getElementById('music-navigation');
+const mtsNavigation = document.getElementById('mts-navigation');
+const socialsNavigation = document.getElementById('socials-navigation');
+const navigationNavigation = document.getElementById('navigation-navigation');
+
 hobbies.onclick = function() { showSection(hobbiesSection); }
 dev.onclick = function() { showSection(devSection); }
 music.onclick = function() { showSection(musicSection); }
 mts.onclick = function() { showSection(mtsSection); }
 socials.onclick = function() { showSection(socialsSection); }
+
+hobbiesNavigation.onclick = function() { showSection(hobbiesSection); }
+devNavigation.onclick = function() { showSection(devSection); }
+musicNavigation.onclick = function() { showSection(musicSection); }
+mtsNavigation.onclick = function() { showSection(mtsSection); }
+socialsNavigation.onclick = function() { showSection(socialsSection); }
 
 showSection = (element) => {
 	let els = [hobbiesSection, navigationSection, menuSection, devSection, musicSection, mtsSection, socialsSection];

@@ -50,13 +50,13 @@ body {
 #music{
 	background-image: url("./music.jpg");
 }
-#music-menu {
+#music-menu, #music-navigation {
 	font-family: 'RoadRage', monospace;
 }
 #dev{
 	background-image: url("./dev.jpg");
 }
-#dev-menu {
+#dev-menu, #dev-navigation {
 	font-family: 'Ubuntu Mono', monospace;
 	background-color: black;
 	color: #e62474;
@@ -68,7 +68,7 @@ body {
 #hobbies{
 	background-image: url("./hobbies.jpg");
 }
-#hobbies-menu {
+#hobbies-menu, #hobbies-navigation {
 	font-family: 'Graduate', monospace;
 	color: black;
 	text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
@@ -76,7 +76,7 @@ body {
 #mts{
 	background-image: url("./mts.jpg");
 }
-#mts-menu {
+#mts-menu, #mts-navigation {
 	font-family: 'Bebas Neue', monospace;
 	color: #E50914;
 	letter-spacing: 5px;
@@ -85,7 +85,7 @@ body {
 #socials{
 	background-image: url("./socials.jpg");
 }
-#socials-menu {
+#socials-menu, #socials-navigation {
 	  box-sizing: content-box;
 	  border: none;
 	  font-family: 'Helvetica', sans-serif;
@@ -131,14 +131,88 @@ body:hover .section:not(:hover){
 	box-shadow: gray 0px 10px 100px;
 }
 
+#navigation-section h2{
+	cursor: pointer;
+}
+
 /*
 *
 * Start Music Section
 *
 */
 
+#music-section{
+	padding-top: 50px;
+}
+
 #music-section ul img{
 	max-width: 15em;
+}
+
+#music-section > p{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.artist {
+	background-color: #282828;
+	width: fit-content;
+	padding: 16px;
+	--card-container-border-radius: clamp(4px,(var(--column-width,0px) - 32px) * 0.025,8px);
+	border-radius: calc(var(--card-container-border-radius) + 2px);
+	height: fit-content;
+}
+
+.artist img{
+	border-radius: 50%;
+	margin-bottom: 16px;
+	width: 150px;
+	height: 150px;
+}
+
+.music-card{
+	display: flex;
+	padding: 0 50px 0 50px;
+	margin-bottom: 50px;
+}
+.music li{
+	border-top: 1px solid #282828;
+	list-style: none;
+	flex-direction: row;
+	padding: 10px 0 10px 10px;
+	display: flex;
+	--card-container-border-radius: clamp(4px,(var(--column-width,0px) - 32px) * 0.025,8px);
+	border-radius: calc(var(--card-container-border-radius) + 2px);
+}
+.music li span{
+	margin-right: 55px;
+	text-align: right;
+	color: #A7A79B;
+	font-weight: bold;
+}
+.music{
+	width: 100%;
+}
+
+.fa-heart {
+	color: #1ED760;	
+	margin-left: auto;
+	margin-right: 50px;
+	font-size: 19px;
+}
+
+.music li:last-child{
+	border-bottom: 1px solid #282828;
+}
+
+.music li:hover{
+	background-color: #2A2A2A;
+}
+
+#music-section {
+	color: white;
+	background-color: #121212;
+	font-family: 'Raleway' , monospace;
 }
 
 /*
