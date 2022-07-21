@@ -22,6 +22,14 @@
 	#hobbies{
 		background-position: top;
 	}
+	
+	#socials-section #text
+	{
+		display: block;
+		position: absolute;
+		top: 10%;
+		left: 10%;
+	}
 }
 
 @media screen and (min-device-width: 415px) {
@@ -29,6 +37,14 @@
 		width: calc(100%/5);
 		background-size: auto 100%;
 		padding-top: 50px;
+	}
+	
+	#socials-section #text
+	{
+		display: block;
+		position: absolute;
+		top: 25%;
+		right: 10%;
 	}
 }
 
@@ -128,7 +144,6 @@ body:hover .section:not(:hover){
 #navigation-section{
 	display: flex;
 	justify-content: space-around;
-	box-shadow: gray 0px 10px 100px;
 }
 
 #navigation-section h2{
@@ -218,6 +233,302 @@ body:hover .section:not(:hover){
 /*
 *
 * End Music Section
+*
+*/
+
+
+/*
+*
+* Start Socials Section
+*
+*/
+
+#socials-section
+{
+	box-sizing: border-box;
+	font-family: 'Helvetica', monospace;
+}
+
+#ios-container 
+{
+	text-shadow: 0 0 6px rgba(0, 0, 0, 1);
+	margin: 50px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	border-radius: 30px;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 15px 25px 6px rgba(0, 0, 0, 0.4);
+}
+
+#ios-container:hover
+{
+	box-shadow: 0 8px 18px 4px rgba(0, 0, 0, 0.4) !important;
+}
+
+#ios-container .frame
+{
+	position: relative;
+}
+
+#ios-container .app
+{
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	padding: 25px 0;
+}
+#ios-container .app a:last-child
+{
+	font-size: 0.8em;
+	text-decoration: none;
+	color: white;
+}
+
+#ios-container .screen
+{
+	padding-top: 50px;
+	width: 100%;
+	height: 46.875rem;
+	background: linear-gradient(#f0edea, #a3a19f);
+	border-radius: 30px;
+	border: 6px solid black;
+	overflow: hidden;
+	background-image: url("https://wallpapercave.com/wp/wp5103994.jpg");
+	background-size: cover;
+}
+
+#ios-container .screen .content
+{
+	width: inherit;
+	height: 100%;
+	overflow: hidden;
+	color: white;
+	padding: 20px;
+}
+
+#ios-container tr:last-child{
+	backdrop-filter: blur(10px) brightness(1.5);
+	border-radius: 5px;
+}
+
+#ios-container tr:last-child a:last-child{
+	color: #333;
+}
+
+#ios-container .notch 
+{
+	position: absolute;
+	width: 120px;
+	height: 26px;
+	background: black;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+
+#ios-container .notch > span.mic
+{
+	width: 40px;
+	position: absolute;
+	display: inline-block;
+	height: 6px;
+	border-radius: 6px;
+	background: #474646;
+	transform: translate(40px, 10px);
+}
+#ios-container .app i{
+	margin-bottom: 10px;
+}
+
+#ios-container .notch > span.camera 
+{
+	position: absolute;
+	width: 10px;
+	display: inline-block;
+	height: 10px;
+	border-radius: 50%;
+	background: linear-gradient(#00428a, #141414);
+	transform: translate(85px, 8px);
+}  
+.fa-instagram{
+	-webkit-background-clip: text;
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	text-shadow: none;
+	padding: 15px;
+	border-radius: 5px;
+	color: white;
+}
+.fa-twitch{
+	background-color: #9146FF;
+	text-shadow: none;
+	color: white;
+	padding: 15px;
+	border-radius: 5px;
+}
+.fa-github{
+	color: #333;
+	text-shadow: none;
+	background-color: white;
+	padding: 15px;
+	border-radius: 5px;
+}
+.fa-spotify{
+	color: #1ED760;
+	text-shadow: none;
+	background-color: black;
+	padding: 15px;
+	border-radius: 5px;
+}
+.fa-youtube{
+	color: #f00;
+	text-shadow: none;
+	background-color: white;
+	padding: 15px;
+	border-radius: 5px;
+}
+.fa-envelope{
+	color: #fff;
+	text-shadow: none;
+	background:linear-gradient(45deg, #8e36e0 0%, #164b92 100%);
+	padding: 15px;
+	border-radius: 5px;
+}
+.fa-twitter
+{
+	color: #fff;
+	text-shadow: none;
+	padding: 15px;
+	border-radius: 5px;
+	background-color: #1DA1F2;
+}
+.fa-facebook-f
+{
+	background-color: #4267B2;
+	text-shadow: none;
+	padding: 15px;
+	border-radius: 5px;
+	color: white;
+	width: 32px;
+}
+.fa-linkedin-in{
+	color: #0A66C2;
+	text-shadow: none;
+	background-color: white;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+
+/*
+*
+* End Socials Section
+*
+*/
+
+/*
+*
+* Start MTS Section
+*
+*/
+
+/* CSS VARIABLES */
+:root {
+	--primary: #141414;
+	--light: #F3F3F3;
+	--dark: 	#686868;
+}
+
+#mts-section {
+	background-color: var(--primary);
+	color: var(--light);
+	box-sizing: border-box;
+	line-height: 1.4;
+	padding: 20px 50px 50px 50px;
+	font-family: 'Bebas Neue', monospace;
+	letter-spacing: 2px;
+	min-height: calc(100% - 77.81px);
+}
+#mts-section > p{
+	margin: 0;
+	padding: 0 0 20px 0;
+	font-size: large;
+}
+#mts-section img {
+	max-width: 100%;
+}
+
+.box {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(6, minmax(100px, 1fr));
+}
+
+.box a {
+	transition: transform .3s;  
+}
+
+.box a:hover {
+	transition: transform .3s;
+	-ms-transform: scale(1.4);
+	-webkit-transform: scale(1.4);  
+	transform: scale(1.4);
+}
+
+.box img {
+	border-radius: 2px;
+}
+
+/* MEDIA QUERIES */
+
+@media(max-width: 900px) {
+	.box {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: repeat(4, minmax(100px, 1fr));
+	}
+}
+
+@media(max-width: 700px) {
+	.box {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: repeat(3, minmax(100px, 1fr));
+	}
+}
+
+@media(max-width: 500px) {
+	.wrapper {
+		font-size: 15px;
+	}
+
+	h1 {
+		text-align: center;
+		font-size: 18px;
+	} 
+
+	.box {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: repeat(1, 1fr);
+		text-align: center;    
+	}
+
+	.box a:hover {
+		transition: transform .3s;
+		-ms-transform: scale(1);
+		-webkit-transform: scale(1);  
+		transform: scale(1.2);
+	}   
+}
+
+/*
+*
+* End MTS Section
 *
 */
 
