@@ -47,10 +47,22 @@ showSection = (element) => {
 	
 	if(els[i] != menuSection && navigationSection.classList.contains('hidden')){
 		navigationSection.classList.remove('hidden');
-		console.log("yes");		
 	}else{
 		navigationSection.classList.add('hidden');
-		console.log("no");		
 	}
     element.classList.remove('hidden');
  }
+
+var w  = window.innerWidth;
+var h = window.innerHeight;
+
+// Append line
+for(var i = 1; i <= 50; i++){
+	document.querySelector(".line-count").insertAdjacentHTML("beforeend","<span>"+i+"</span>")
+}
+
+// add direction arrow
+var slides = document.getElementsByClassName("code-item");
+for (let index = 0; index < slides.length; index++) {
+	slides.item(index).insertAdjacentHTML("beforeend", '<span class="directional-arrow"></span>');
+}
