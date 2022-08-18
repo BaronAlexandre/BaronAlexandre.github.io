@@ -631,6 +631,45 @@ body:hover .section:not(:hover){
 *
 */
 
+
+/*
+*
+* Start Hobbies Section
+*
+*/
+
+#hobbies-section {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background: no-repeat bottom center url("https://t4.ftcdn.net/jpg/05/08/80/37/360_F_508803780_s4EkVq5D9TtFLiZ0X1ghZcYek0WWVvtQ.jpg");
+}
+
+
+#hobbies-section .container {
+	padding: 10px;
+}
+
+#hobbies-section .card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	background: white;
+	border-radius: 5px; /* 5px rounded corners */
+	width: 25rem;
+	flex-direction: column;
+	margin-bottom: 50px;
+  }
+  
+#hobbies-section .card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+/*
+*
+* End Hobbies Section
+*
+*/
+
 /*
 *
 * Start MTS Section
