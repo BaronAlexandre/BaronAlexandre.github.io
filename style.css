@@ -44,6 +44,7 @@
 		display: block;
 		position: absolute;
 		top: 25%;
+		max-width: 400px;
 		right: 10%;
 	}
 }
@@ -456,7 +457,7 @@ body:hover .section:not(:hover){
 	margin: 50px;
 	display: block;
 	position: absolute;
-	top: 50%;
+	top: 60%;
 	left: 25%;
 	border-radius: 30px;
 	transform: translate(-50%, -50%);
@@ -642,7 +643,12 @@ body:hover .section:not(:hover){
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	background: no-repeat bottom center url("https://t4.ftcdn.net/jpg/05/08/80/37/360_F_508803780_s4EkVq5D9TtFLiZ0X1ghZcYek0WWVvtQ.jpg");
+	background: fixed no-repeat center url("./hobbies-bg.png");
+	font-family: 'Helvetica', sans-serif;
+}
+
+#hobbies-section h4 {
+	font-family: 'Graduate', monospace;
 }
 
 
