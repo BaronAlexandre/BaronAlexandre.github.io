@@ -714,11 +714,11 @@ body:hover .section:not(:hover){
 	grid-template-columns: repeat(6, minmax(100px, 1fr));
 }
 
-.box a {
+.box span {
 	transition: transform .3s;  
 }
 
-.box a:hover {
+.box span:hover {
 	transition: transform .3s;
 	-ms-transform: scale(1.4);
 	-webkit-transform: scale(1.4);  
