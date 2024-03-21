@@ -1,11 +1,9 @@
 :root {
     --color1: #222831;
-    --color2: #393E46;
-    --color3: #FFD369;
-    --color4: #EEEEEE;
+    --color2: #34436F;
+    --color3: #F2D365;
 }
 
 * {
-    color: var(--color1);
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
