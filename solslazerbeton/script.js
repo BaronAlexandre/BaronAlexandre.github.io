@@ -24,3 +24,34 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+
+let startX;
+let endX;
+const slider = document.getElementById('slider');
+
+slider.addEventListener('touchstart', function (event) {
+    startX = event.touches[0].clientX;
+}, false);
+
+slider.addEventListener('touchend', function (event) {
+    endX = event.changedTouches[0].clientX;
+    handleSwipe();
+}, false);
+
+function handleSwipe() {
+    if (startX - endX > 50) {
+        // Swipe gauche
+        let currentRadio = slider.querySelector('input[type="radio"]:checked');
+        let nextRadio = currentRadio.nextElementSibling || document.querySelector('input[type="radio"]:first-child');
+        nextRadio.checked = true;
+        console.log(nextRadio);
+    } else if (endX - startX > 50) {
+        // Swipe droit
+        let currentRadio = slider.querySelector('input[type="radio"]:checked');
+        let prevRadio = currentRadio.previousElementSibling || document.querySelector('input[type="radio"]:last-child');
+        prevRadio.checked = true;
+        console.log(nextRadio);
+    }
+}
