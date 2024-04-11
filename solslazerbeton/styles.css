@@ -7,3 +7,140 @@
 * {
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: 15% auto;
+    display: block;
+    width: 70%;
+    max-width: 700px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.radio-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.radio-button:hover {
+    background-color: #ccc;
+}
+
+input[type="radio"]:checked+.radio-button {
+    background-color: #555;
+}
+
+
+/* Modifier la couleur de fond du label de bouton radio lorsque l'image associée est affichée */
+#item-1:checked~.flex .radio-button:nth-child(1),
+#item-2:checked~.flex .radio-button:nth-child(2),
+#item-3:checked~.flex .radio-button:nth-child(3),
+#item-4:checked~.flex .radio-button:nth-child(4),
+#item-5:checked~.flex .radio-button:nth-child(5),
+#item-6:checked~.flex .radio-button:nth-child(6),
+#item-7:checked~.flex .radio-button:nth-child(7),
+#item-8:checked~.flex .radio-button:nth-child(8),
+#item-9:checked~.flex .radio-button:nth-child(9),
+#item-10:checked~.flex .radio-button:nth-child(10) {
+    background-color: #555;
+    /* Choisir la couleur de votre choix */
+}
+
+
+#item-1:checked~.cards #pic-1,
+#item-2:checked~.cards #pic-2,
+#item-3:checked~.cards #pic-3,
+#item-4:checked~.cards #pic-4,
+#item-5:checked~.cards #pic-5,
+#item-6:checked~.cards #pic-6,
+#item-7:checked~.cards #pic-7,
+#item-8:checked~.cards #pic-8,
+#item-9:checked~.cards #pic-9,
+#item-10:checked~.cards #pic-10 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+#item-1:checked~.cards #pic-1 img,
+#item-2:checked~.cards #pic-2 img,
+#item-3:checked~.cards #pic-3 img,
+#item-4:checked~.cards #pic-4 img,
+#item-5:checked~.cards #pic-5 img,
+#item-6:checked~.cards #pic-6 img,
+#item-7:checked~.cards #pic-7 img,
+#item-8:checked~.cards #pic-8 img,
+#item-9:checked~.cards #pic-9 img,
+#item-10:checked~.cards #pic-10 img {
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+}
+
+.card {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+}
+
+/* Styles pour masquer les images précédentes lorsque le bouton radio suivant est sélectionné */
+#item-1:checked~.cards #pic-10,
+#item-2:checked~.cards #pic-1,
+#item-3:checked~.cards #pic-2,
+#item-4:checked~.cards #pic-3,
+#item-5:checked~.cards #pic-4,
+#item-6:checked~.cards #pic-5,
+#item-7:checked~.cards #pic-6,
+#item-8:checked~.cards #pic-7,
+#item-9:checked~.cards #pic-8,
+#item-10:checked~.cards #pic-9 {
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+/* Styles pour masquer les images précédentes lorsque le bouton radio suivant est sélectionné */
+#item-1:checked~.cards #pic-2,
+#item-2:checked~.cards #pic-3,
+#item-3:checked~.cards #pic-4,
+#item-4:checked~.cards #pic-5,
+#item-5:checked~.cards #pic-6,
+#item-6:checked~.cards #pic-7,
+#item-7:checked~.cards #pic-8,
+#item-8:checked~.cards #pic-9,
+#item-9:checked~.cards #pic-10,
+#item-10:checked~.cards #pic-1 {
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}

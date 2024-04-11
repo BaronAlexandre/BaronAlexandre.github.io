@@ -65,34 +65,34 @@
 
           <div class="relative w-full h-full cards">
             <label for="item-1" id="pic-1" class="card absolute w-full h-full left-0 right-0 m-auto cursor-pointer">
-              <img src="img/refs/NOS REFERENCES/CAP MAIL RENNES.jpg" class="w-full h-full rounded-lg object-cover">
+              <img src="img/refs/NOS REFERENCES/reduce/CAP MAIL RENNES.jpg" class="w-full h-full rounded-lg object-cover">
               <p class="text-center mt-2">CAP MAIL RENNES</p>
             </label>
             <label for="item-2" id="pic-2" class="card absolute w-full h-full left-0 right-0 m-auto cursor-pointer">
-              <img src="img/refs/NOS REFERENCES/CENTRE COMMERCIAL SAINT GREGOIRE.jpg"
+              <img src="img/refs/NOS REFERENCES/reduce/CENTRE COMMERCIAL SAINT GREGOIRE.jpg"
                 class="w-full h-full rounded-lg object-cover">
               <p class="text-center mt-2">CENTRE COMMERCIAL SAINT GREGOIRE</p>
             </label>
             <label for="item-3" id="pic-3" class="card absolute w-full h-full left-0 right-0 m-auto cursor-pointer">
-              <img src="img/refs/NOS REFERENCES/Coulage Technicolor.jpg" class="w-full h-full rounded-lg object-cover">
+              <img src="img/refs/NOS REFERENCES/reduce/Coulage Technicolor.jpg" class="w-full h-full rounded-lg object-cover">
               <p class="text-center mt-2">Coulage Technicolor</p>
             </label>
             <label for="item-4" id="pic-4" class="card absolute w-full h-full left-0 right-0 m-auto cursor-pointer">
-              <img src="img/refs/NOS REFERENCES/LE GRAND HOTEL DES THERMES SAINT MALO.jpg"
+              <img src="img/refs/NOS REFERENCES/reduce/LE GRAND HOTEL DES THERMES SAINT MALO.jpg"
                 class="w-full h-full rounded-lg object-cover">
               <p class="text-center mt-2">LE GRAND HOTEL DES THERMES SAINT MALO</p>
             </label>
             <label for="item-5" id="pic-5" class="card absolute w-full h-full left-0 right-0 m-auto cursor-pointer">
-              <img src="img/refs/NOS REFERENCES/LOU CHAMPIGONS LANDIVY.jpg"
+              <img src="img/refs/NOS REFERENCES/reduce/LOU CHAMPIGONS LANDIVY.jpg"
                 class="w-full h-full rounded-lg object-cover">
               <p class="text-center mt-2">LOU CHAMPIGONS LANDIVY</p>
             </label>
             <label for="item-6" id="pic-6" class="card absolute w-full h-full left-0 right-0 m-auto cursor-pointer">
-              <img src="img/refs/NOS REFERENCES/MIX BUFFET GUER.jpeg" class="w-full h-full rounded-lg object-cover">
+              <img src="img/refs/NOS REFERENCES/reduce/MIX BUFFET GUER.jpeg" class="w-full h-full rounded-lg object-cover">
               <p class="text-center mt-2">MIX BUFFET GUER</p>
             </label>
             <label for="item-7" id="pic-7" class="card absolute w-full h-full left-0 right-0 m-auto cursor-pointer">
-              <img src="img/refs/NOS REFERENCES/Technicolor Cesson-Cévigné ( 35 ).jpeg"
+              <img src="img/refs/NOS REFERENCES/reduce/Technicolor Cesson-Cévigné ( 35 ).jpeg"
                 class="w-full h-full rounded-lg object-cover">
               <p class="text-center mt-2">Technicolor Cesson-Cévigné ( 35 )</p>
             </label>
@@ -130,172 +130,7 @@
     </div>
   </footer>
 
-  <style>
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0, 0, 0, 0.9);
-    }
-
-    .modal-content {
-      margin: 15% auto;
-      display: block;
-      width: 70%;
-      max-width: 700px;
-    }
-
-    .close-btn {
-      position: absolute;
-      top: 15px;
-      right: 35px;
-      color: #f1f1f1;
-      font-size: 40px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .close-btn:hover,
-    .close-btn:focus {
-      color: #bbb;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    .radio-button {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background-color: #ddd;
-      display: inline-block;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .radio-button:hover {
-      background-color: #ccc;
-    }
-
-    input[type="radio"]:checked+.radio-button {
-      background-color: #555;
-    }
-
-    /* Modifier la couleur de fond du label de bouton radio lorsque l'image associée est affichée */
-    #item-1:checked~.flex .radio-button:nth-child(1),
-    #item-2:checked~.flex .radio-button:nth-child(2),
-    #item-3:checked~.flex .radio-button:nth-child(3),
-    #item-4:checked~.flex .radio-button:nth-child(4),
-    #item-5:checked~.flex .radio-button:nth-child(5),
-    #item-6:checked~.flex .radio-button:nth-child(6),
-    #item-7:checked~.flex .radio-button:nth-child(7) {
-      background-color: #555;
-    }
-
-
-    #item-1:checked~.cards #pic-1,
-    #item-2:checked~.cards #pic-2,
-    #item-3:checked~.cards #pic-3,
-    #item-4:checked~.cards #pic-4,
-    #item-5:checked~.cards #pic-5,
-    #item-6:checked~.cards #pic-6,
-    #item-7:checked~.cards #pic-7 {
-      transform: translatex(0) scale(1);
-      opacity: 1;
-      z-index: 1;
-    }
-
-    #item-1:checked~.cards #pic-1 img,
-    #item-2:checked~.cards #pic-2 img,
-    #item-3:checked~.cards #pic-3 img,
-    #item-4:checked~.cards #pic-4 img,
-    #item-5:checked~.cards #pic-5 img,
-    #item-6:checked~.cards #pic-6 img,
-    #item-7:checked~.cards #pic-7 img {
-      box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
-    }
-
-    .card {
-      transition: transform 0.4s ease, opacity 0.4s ease;
-      opacity: 0;
-    }
-
-    /* Styles pour masquer les images précédentes lorsque le bouton radio suivant est sélectionné */
-    #item-1:checked~.cards #pic-7,
-    #item-2:checked~.cards #pic-1,
-    #item-3:checked~.cards #pic-2,
-    #item-4:checked~.cards #pic-3,
-    #item-5:checked~.cards #pic-4,
-    #item-6:checked~.cards #pic-5,
-    #item-7:checked~.cards #pic-6 {
-      transform: translateX(-40%) scale(0.8);
-      opacity: 0.4;
-      z-index: 0;
-    }
-
-    /* Styles pour masquer les images précédentes lorsque le bouton radio suivant est sélectionné */
-    #item-1:checked~.cards #pic-2,
-    #item-2:checked~.cards #pic-3,
-    #item-3:checked~.cards #pic-4,
-    #item-4:checked~.cards #pic-5,
-    #item-5:checked~.cards #pic-6,
-    #item-6:checked~.cards #pic-7,
-    #item-7:checked~.cards #pic-1 {
-      transform: translateX(40%) scale(0.8);
-      opacity: 0.4;
-      z-index: 0;
-    }
-  </style>
   <script src="script.js"></script>
 </body>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-  const cards = document.querySelectorAll('.card');
-
-  // Générer la modal
-  const modal = document.createElement('div');
-  modal.id = 'modal';
-  modal.className = 'modal';
-  modal.innerHTML = `
-    <span class="close-btn">&times</span>
-    <img id="modal-img" class="modal-content" src="" alt="Image en grande taille">
-  `;
-  document.body.appendChild(modal);
-
-  cards.forEach(card => {
-    card.addEventListener('click', function () {
-      if (getComputedStyle(card).zIndex === '1') {
-        const imgSrc = this.querySelector("img").src;
-        document.getElementById('modal-img').src = imgSrc;
-        modal.style.display = 'block';
-      }
-    });
-  });
-
-  // Fonction pour récupérer le bouton radio actif
-  function getActiveRadioButton() {
-    return [...document.querySelectorAll('input[type="radio"]')].find(radio => radio.checked);
-  }
-
-  // Fermer la modal en cliquant sur le bouton de fermeture
-  document.querySelector('.close-btn').addEventListener('click', () => {
-    modal.style.display = 'none';
-  });
-
-  // Fermer la modal en cliquant en dehors de la modal
-  window.addEventListener('click', (event) => {
-    if (event.target === modal) {
-      modal.style.display = 'none';
-    }
-  });
-});
-
-</script>
-
 
 </html>
