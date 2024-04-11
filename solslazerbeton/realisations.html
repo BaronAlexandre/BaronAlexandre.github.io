@@ -99,7 +99,8 @@
               <p class="text-center mt-2">DALLAGE SURFACE QUARTZ BLANC</p>
             </label>
             <label for="item-7" id="pic-7" class="card absolute w-full h-full left-0 right-0 m-auto cursor-pointer">
-              <img src="img/real/REALISATION SOLS LAZER BETON/reduce/DALLAGE SURFACE QUARTZ GRIS ANTHRACITE AVEC RAILS.jpg"
+              <img
+                src="img/real/REALISATION SOLS LAZER BETON/reduce/DALLAGE SURFACE QUARTZ GRIS ANTHRACITE AVEC RAILS.jpg"
                 class="w-full h-full rounded-lg object-cover">
               <p class="text-center mt-2">DALLAGE SURFACE QUARTZ GRIS ANTHRACITE AVEC RAILS</p>
             </label>
@@ -158,6 +159,39 @@
   </footer>
   <script src="script.js"></script>
   <script src="swipe.js"></script>
+  <style>
+    /* Styles pour masquer les images précédentes lorsque le bouton radio suivant est sélectionné */
+    #item-1:checked~.cards #pic-10,
+    #item-2:checked~.cards #pic-1,
+    #item-3:checked~.cards #pic-2,
+    #item-4:checked~.cards #pic-3,
+    #item-5:checked~.cards #pic-4,
+    #item-6:checked~.cards #pic-5,
+    #item-7:checked~.cards #pic-6,
+    #item-8:checked~.cards #pic-7,
+    #item-9:checked~.cards #pic-8,
+    #item-10:checked~.cards #pic-9 {
+      transform: translateX(-40%) scale(0.8);
+      opacity: 0.4;
+      z-index: 0;
+    }
+
+    /* Styles pour masquer les images précédentes lorsque le bouton radio suivant est sélectionné */
+    #item-1:checked~.cards #pic-2,
+    #item-2:checked~.cards #pic-3,
+    #item-3:checked~.cards #pic-4,
+    #item-4:checked~.cards #pic-5,
+    #item-5:checked~.cards #pic-6,
+    #item-6:checked~.cards #pic-7,
+    #item-7:checked~.cards #pic-8,
+    #item-8:checked~.cards #pic-9,
+    #item-9:checked~.cards #pic-10,
+    #item-10:checked~.cards #pic-1 {
+      transform: translateX(40%) scale(0.8);
+      opacity: 0.4;
+      z-index: 0;
+    }
+  </style>
 </body>
 
 </html>
