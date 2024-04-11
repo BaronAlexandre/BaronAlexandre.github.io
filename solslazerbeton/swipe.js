@@ -17,13 +17,11 @@ function handleSwipe() {
         let currentRadio = slider.querySelector('input[type="radio"]:checked');
         let nextRadio = currentRadio.nextElementSibling || document.querySelector('input[type="radio"]:first-child');
         nextRadio.checked = true;
-        console.log(nextRadio);
     } else if (endX - startX > 50) {
         // Swipe droit
         let currentRadio = slider.querySelector('input[type="radio"]:checked');
         let prevRadio = currentRadio.previousElementSibling || document.querySelector('input[type="radio"]:last-child');
         prevRadio.checked = true;
-        console.log(nextRadio);
     }
 }
 
