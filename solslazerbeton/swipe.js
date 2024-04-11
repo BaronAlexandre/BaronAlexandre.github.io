@@ -17,13 +17,11 @@ function handleSwipe() {
         let currentRadio = slider.querySelector('input[type="radio"]:checked');
         let nextRadio = currentRadio.nextElementSibling || document.querySelector('input[type="radio"]:first-child');
         nextRadio.checked = true;
-        console.log(nextRadio);
     } else if (endX - startX > 50) {
         // Swipe droit
         let currentRadio = slider.querySelector('input[type="radio"]:checked');
         let prevRadio = currentRadio.previousElementSibling || document.querySelector('input[type="radio"]:last-child');
         prevRadio.checked = true;
-        console.log(nextRadio);
     }
 }
 
@@ -34,31 +32,25 @@ document.addEventListener("DOMContentLoaded", function () {
     // Générer la modal
     const modal = document.createElement('div');
     modal.id = 'modal';
-    modal.className = 'modal';
+    modal.className = 'modal pt-[40%]';
     modal.innerHTML = `
-      <span class="close-btn">&times</span>
-      <img id="modal-img" class="modal-content" src="" alt="Image en grande taille">
+      <img id="modal-img" class="mx-[5%] pb-8 block w-[90%] max-w-[700px]">
+      <p class="text-white text-center" id="modal-label"></p>
     `;
+
     document.body.appendChild(modal);
 
     cards.forEach(card => {
         card.addEventListener('click', function () {
             if (getComputedStyle(card).zIndex === '1') {
                 const imgSrc = this.querySelector("img").src.replace("/reduce","");
+                const text = this.querySelector("p").innerText;
                 document.getElementById('modal-img').src = imgSrc;
+                console.log(text);
+                document.getElementById('modal-label').innerText = text;
                 modal.style.display = 'block';
             }
         });
-    });
-
-    // Fonction pour récupérer le bouton radio actif
-    function getActiveRadioButton() {
-        return [...document.querySelectorAll('input[type="radio"]')].find(radio => radio.checked);
-    }
-
-    // Fermer la modal en cliquant sur le bouton de fermeture
-    document.querySelector('.close-btn').addEventListener('click', () => {
-        modal.style.display = 'none';
     });
 
     // Fermer la modal en cliquant en dehors de la modal
