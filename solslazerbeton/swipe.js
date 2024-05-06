@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Générer la modal
     const modal = document.createElement('div');
     modal.id = 'modal';
-    modal.className = 'modal pt-[40%]';
+    modal.className = 'modal';
     modal.innerHTML = `
-      <img id="modal-img" class="mx-[5%] pb-8 block w-[90%] max-w-[700px]">
+      <img id="modal-img" class="mx-auto pb-8 block w-[90%] max-w-[700px]">
       <p class="text-white text-center" id="modal-label"></p>
     `;
 
@@ -46,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 const imgSrc = this.querySelector("img").src.replace("/reduce","");
                 const text = this.querySelector("p").innerText;
                 document.getElementById('modal-img').src = imgSrc;
-                console.log(text);
                 document.getElementById('modal-label').innerText = text;
                 modal.style.display = 'block';
             }

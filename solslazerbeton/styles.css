@@ -49,7 +49,14 @@ input[type="radio"]:checked+.radio-button {
 #item-7:checked~.flex .radio-button:nth-child(7),
 #item-8:checked~.flex .radio-button:nth-child(8),
 #item-9:checked~.flex .radio-button:nth-child(9),
-#item-10:checked~.flex .radio-button:nth-child(10) {
+#item-10:checked~.flex .radio-button:nth-child(10),
+#item-11:checked~.flex .radio-button:nth-child(11),
+#item-12:checked~.flex .radio-button:nth-child(12),
+#item-13:checked~.flex .radio-button:nth-child(13),
+#item-14:checked~.flex .radio-button:nth-child(14),
+#item-15:checked~.flex .radio-button:nth-child(15),
+#item-16:checked~.flex .radio-button:nth-child(16),
+#item-17:checked~.flex .radio-button:nth-child(17) {
     background-color: #555;
     /* Choisir la couleur de votre choix */
 }
@@ -64,7 +71,14 @@ input[type="radio"]:checked+.radio-button {
 #item-7:checked~.cards #pic-7,
 #item-8:checked~.cards #pic-8,
 #item-9:checked~.cards #pic-9,
-#item-10:checked~.cards #pic-10 {
+#item-10:checked~.cards #pic-10,
+#item-11:checked~.cards #pic-11,
+#item-12 :checked~.cards #pic-12,
+#item-13:checked~.cards #pic-13,
+#item-14:checked~.cards #pic-14,
+#item-15:checked~.cards #pic-15,
+#item-16:checked~.cards #pic-16,
+#item-17:checked~.cards #pic-17 {
     transform: translatex(0) scale(1);
     opacity: 1;
     z-index: 1;
@@ -79,7 +93,14 @@ input[type="radio"]:checked+.radio-button {
 #item-7:checked~.cards #pic-7 img,
 #item-8:checked~.cards #pic-8 img,
 #item-9:checked~.cards #pic-9 img,
-#item-10:checked~.cards #pic-10 img {
+#item-10:checked~.cards #pic-10 img,
+#item-11:checked~.cards #pic-11 img,
+#item-12:checked~.cards #pic-12 img,
+#item-13:checked~.cards #pic-13 img,
+#item-14:checked~.cards #pic-14 img,
+#item-15:checked~.cards #pic-15 img,
+#item-16:checked~.cards #pic-16 img,
+#item-17:checked~.cards #pic-17 img {
     box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
 }
 
