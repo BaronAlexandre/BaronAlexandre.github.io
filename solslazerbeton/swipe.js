@@ -12,15 +12,23 @@ slider.addEventListener('touchend', function (event) {
 }, false);
 
 function handleSwipe() {
+    let currentRadio = slider.querySelector('input[type="radio"]:checked');
     if (startX - endX > 50) {
         // Swipe gauche
-        let currentRadio = slider.querySelector('input[type="radio"]:checked');
-        let nextRadio = currentRadio.nextElementSibling || document.querySelector('input[type="radio"]:first-child');
+        let nextRadio = currentRadio.nextElementSibling;
+        if(nextRadio == null || !nextRadio.value)
+        {
+            nextRadio = slider.querySelector('input[type="radio"]:first-of-type');
+        } 
         nextRadio.checked = true;
     } else if (endX - startX > 50) {
         // Swipe droit
         let currentRadio = slider.querySelector('input[type="radio"]:checked');
-        let prevRadio = currentRadio.previousElementSibling || document.querySelector('input[type="radio"]:last-child');
+        let prevRadio = currentRadio.previousElementSibling;
+        if(prevRadio == null || !currentRadio.value)
+            {
+            prevRadio = slider.querySelector('input[type="radio"]:last-of-type');
+        }
         prevRadio.checked = true;
     }
 }
