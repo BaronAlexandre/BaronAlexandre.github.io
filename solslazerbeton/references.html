@@ -75,6 +75,9 @@
           <input type="radio" name="slider" id="item-5" class="invisible h-0">
           <input type="radio" name="slider" id="item-6" class="invisible h-0">
           <input type="radio" name="slider" id="item-7" class="invisible h-0">
+          <input type="radio" name="slider" id="item-8" class="invisible h-0">
+          <input type="radio" name="slider" id="item-9" class="invisible h-0">
+          <input type="radio" name="slider" id="item-10" class="invisible h-0">
 
           <div class="relative w-full h-full cards">
             <label for="item-1" id="pic-1" class="card absolute w-full h-full left-0 right-0 m-auto cursor-pointer">
@@ -108,6 +111,18 @@
               <img src="img/refs/reduce/mix-buffet-guer.jpg" class="w-full h-full rounded-lg object-cover">
               <p class="text-center mt-2">Mix Buffet - Guer 56380</p>
             </label>
+            <label for="item-8" id="pic-8" class="card absolute w-full h-full left-0 right-0 m-auto cursor-pointer">
+              <img src="img/refs/reduce/dallage-surface-quartz-lafoirfouille-chateaugiron-35-a-mettre-dans-nos-references.jpg" class="w-full h-full rounded-lg object-cover">
+              <p class="text-center mt-2">Mix Buffet - Guer 56380</p>
+            </label>
+            <label for="item-9" id="pic-9" class="card absolute w-full h-full left-0 right-0 m-auto cursor-pointer">
+              <img src="img/refs/reduce/chantier-charal-cholet-49-en-cours.jpg" class="w-full h-full rounded-lg object-cover">
+              <p class="text-center mt-2">Mix Buffet - Guer 56380</p>
+            </label>
+            <label for="item-10" id="pic-10" class="card absolute w-full h-full left-0 right-0 m-auto cursor-pointer">
+              <img src="img/refs/reduce/agrandissement-du-centre-dentrainement-du-stade-rennais-35.jpg" class="w-full h-full rounded-lg object-cover">
+              <p class="text-center mt-2">Mix Buffet - Guer 56380</p>
+            </label>
           </div>
           <div class="flex justify-center gap-2 mt-20">
             <label for="item-1" class="radio-button"></label>
@@ -117,6 +132,9 @@
             <label for="item-5" class="radio-button"></label>
             <label for="item-6" class="radio-button"></label>
             <label for="item-7" class="radio-button"></label>
+            <label for="item-8" class="radio-button"></label>
+            <label for="item-9" class="radio-button"></label>
+            <label for="item-10" class="radio-button"></label>
           </div>
         </div>
       </div>
@@ -147,13 +165,16 @@
   <script src="swipe.js"></script>
   <style>
     /* Styles pour masquer les images précédentes lorsque le bouton radio suivant est sélectionné */
-    #item-1:checked~.cards #pic-7,
+    #item-1:checked~.cards #pic-10,
     #item-2:checked~.cards #pic-1,
     #item-3:checked~.cards #pic-2,
     #item-4:checked~.cards #pic-3,
     #item-5:checked~.cards #pic-4,
     #item-6:checked~.cards #pic-5,
-    #item-7:checked~.cards #pic-6 {
+    #item-7:checked~.cards #pic-6,
+    #item-8:checked~.cards #pic-7,
+    #item-9:checked~.cards #pic-8,
+    #item-10:checked~.cards #pic-9 {
       transform: translateX(-30%) scale(0.8);
       opacity: 0.4;
       z-index: 0;
@@ -166,7 +187,10 @@
     #item-4:checked~.cards #pic-5,
     #item-5:checked~.cards #pic-6,
     #item-6:checked~.cards #pic-7,
-    #item-7:checked~.cards #pic-1 {
+    #item-7:checked~.cards #pic-8,
+    #item-8:checked~.cards #pic-9,
+    #item-9:checked~.cards #pic-10,
+    #item-10:checked~.cards #pic-1 {
       transform: translateX(30%) scale(0.8);
       opacity: 0.4;
       z-index: 0;
