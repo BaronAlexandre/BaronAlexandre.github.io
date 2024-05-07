@@ -12,15 +12,23 @@ slider.addEventListener('touchend', function (event) {
 }, false);
 
 function handleSwipe() {
+    let currentRadio = slider.querySelector('input[type="radio"]:checked');
     if (startX - endX > 50) {
         // Swipe gauche
-        let currentRadio = slider.querySelector('input[type="radio"]:checked');
-        let nextRadio = currentRadio.nextElementSibling || document.querySelector('input[type="radio"]:first-child');
+        let nextRadio = currentRadio.nextElementSibling;
+        if(nextRadio == null || !nextRadio.value)
+        {
+            nextRadio = slider.querySelector('input[type="radio"]:first-of-type');
+        } 
         nextRadio.checked = true;
     } else if (endX - startX > 50) {
         // Swipe droit
         let currentRadio = slider.querySelector('input[type="radio"]:checked');
-        let prevRadio = currentRadio.previousElementSibling || document.querySelector('input[type="radio"]:last-child');
+        let prevRadio = currentRadio.previousElementSibling;
+        if(prevRadio == null || !currentRadio.value)
+            {
+            prevRadio = slider.querySelector('input[type="radio"]:last-of-type');
+        }
         prevRadio.checked = true;
     }
 }
@@ -32,9 +40,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Générer la modal
     const modal = document.createElement('div');
     modal.id = 'modal';
-    modal.className = 'modal pt-[40%]';
+    modal.className = 'modal';
     modal.innerHTML = `
-      <img id="modal-img" class="mx-[5%] pb-8 block w-[90%] max-w-[700px]">
+      <img id="modal-img" class="mx-auto pb-8 block w-[90%] max-w-[700px]">
       <p class="text-white text-center" id="modal-label"></p>
     `;
 
@@ -46,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 const imgSrc = this.querySelector("img").src.replace("/reduce","");
                 const text = this.querySelector("p").innerText;
                 document.getElementById('modal-img').src = imgSrc;
-                console.log(text);
                 document.getElementById('modal-label').innerText = text;
                 modal.style.display = 'block';
             }
