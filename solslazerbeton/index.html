@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="icon" type="image/x-icon" href="img/logo.ico">
-  <script src="https://cdn.tailwindcss.com"></script>
   <title>SOLS LAZER BETON | Dallage industriel et agricole</title>
   <meta name="robots" content="index, follow">
   <meta name="language" content="fr-FR" />
@@ -15,14 +14,37 @@
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "WebSite",
-      "name": "SOLS LAZER BETON",
-      "url": "https://www.solslazerbeton.fr/"
-    }
-  </script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "SOLS LAZER BETON",
+        "url": "https://www.solslazerbeton.fr/"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "image": "https://baronalexandre.github.io/solslazerbeton/img/background.jpg",
+        "url": "https://www.solslazerbeton.fr/",
+        "sameAs": ["https://www.linkedin.com/company/sols-lazer-beton/", "https://www.facebook.com/p/Sols-lazer-B%C3%A9ton-100063872085099"],
+        "logo": "https://www.solslazerbeton.fr/images/logo.png",
+        "name": "Sols Lazer Beton",
+        "description": "Entrepreneur spécialisé dans les revêtements de sol à Vern-sur-Seiche",
+        "email": "contact@example.com",
+        "telephone": "+33 2 23 27 05 04",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "FR",
+          "streetAddress": "4 Rue Paul Gauguin",
+          "addressLocality": "Vern-sur-Seiche",
+          "addressRegion": "Bretagne",
+          "postalCode": "35770",
+          "country": "France"
+        }
+      }
+    </script>
 
 </head>
 
@@ -61,11 +83,12 @@
     </section>
 
     <section class="relative">
-      <img src="img/temp/a-essayer-en-fond-décran-3.jpg" style="object-position: 50% 75%;"
-        class="object-cover lg:h-[600px] md:h-[400px] w-full">
+      <img src="img/background.jpg" style="object-position: 50% 75%;"
+      class="object-cover lg:h-[600px] md:h-[400px] w-full">
       <h1
         class="absolute bottom-10 left-10 bg-black bg-opacity-50 text-xl font-extrabold text-white md:text-3xl lg:text-4xl p-2 rounded-md">
-        Entreprises dallage Rennes <span class="font-normal text-white">SOLS LAZER BETON</span></h1>
+        Entreprise dallage Rennes <span class="font-normal text-white">SOLS LAZER BETON</span></h1>
+        
       <div class="absolute top-10 right-10 bg-white rounded-md px-3 py-2">
         <p class="text-xl text-right mb-2">Demandez votre devis</p>
         <p><i class="fa-solid fa-phone text-xl mr-2"></i><a href="tel:+33782309536">07.82.30.95.36</a> - <a
@@ -119,7 +142,7 @@
           </div>
 
           <div class="md:w-1/2 mt-4 md:mt-0">
-            <img class="rounded-md max-w-[400px]" src="img/finitions/reduce/dallage-surface.jpg" />
+            <img class="rounded-md max-w-full md:max-w-[400px]" src="img/finitions/reduce/dallage-surface.jpg" />
           </div>
         </div>
       </section>
@@ -130,7 +153,7 @@
 
           <div class="flex flex-col-reverse md:flex-row items-center">
             <div class="mt-4 md:w-1/2 md:pr-8">
-              <img class="rounded-md max-w-[400px]" src="img/finitions/reduce/dallage-balayee-devant-garage.jpg" />
+              <img class="rounded-md max-w-full md:max-w-[400px]" src="img/finitions/reduce/dallage-balayee-devant-garage.jpg" />
             </div>
 
             <div class="md:w-1/2 md:mt-0">
@@ -152,7 +175,7 @@
               les trottoirs, les terrasses et les espaces publics.</p>
           </div>
 
-          <div class="md:w-1/2 mt-4 md:mt-0 max-w-[400px]">
+          <div class="md:w-1/2 mt-4 md:mt-0 max-w-full md:max-w-[400px]">
             <img class="rounded-md" src="img/finitions/reduce/beton-imprime.jpg" />
           </div>
         </div>
@@ -164,7 +187,7 @@
           </h3>
           <div class="flex flex-col-reverse md:flex-row items-center">
             <div class="mt-4 md:w-1/2 md:pr-8">
-              <img class="rounded-md max-w-[400px]" src="img/finitions/reduce/beton-desactiver.jpg" />
+              <img class="rounded-md max-w-full md:max-w-[400px]" src="img/finitions/reduce/beton-desactiver.jpg" />
             </div>
 
             <div class="md:w-1/2 md:mt-0">
@@ -183,8 +206,40 @@
     </section>
     </section>
   </main>
-
   <footer class="bg-white rounded-lg shadow m-4">
+    <section class="w-full mx-auto max-w-screen-xl">
+      <div class="flex items-center mb-2"><i class="fa-brands fa-google"></i>
+        <p class="text-lg p-2 font-extrabold">Avis clients</p>
+        <svg class="w-4 h-4 text-yellow-500 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor" viewBox="0 0 22 20">
+          <path
+            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+        </svg>
+        <svg class="w-4 h-4 text-yellow-500 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor" viewBox="0 0 22 20">
+          <path
+            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+        </svg>
+        <svg class="w-4 h-4 text-yellow-500 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor" viewBox="0 0 22 20">
+          <path
+            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+        </svg>
+        <svg class="w-4 h-4 text-yellow-500 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor" viewBox="0 0 22 20">
+          <path
+            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+        </svg>
+        <svg class="w-4 h-4 text-gray-300 me-1 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor" viewBox="0 0 22 20">
+          <path
+            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+        </svg>
+        <p class="ms-1 text-sm font-medium">4.8</p>
+        <p class="ms-1 text-sm font-medium">sur</p>
+        <p class="ms-1 text-sm font-medium">5 avis</p>
+      </div>
+    </section>
     <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
       <span class="text-sm text-gray-500 sm:text-center">© 2023. All Rights Reserved.</span>
       <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 sm:mt-0">
@@ -200,8 +255,13 @@
         <li>
           <a href="contact.html" class="hover:underline me-4 md:me-6">Nous Contacter</a>
         </li>
+        <li>
+          <a href="https://www.linkedin.com/company/sols-lazer-beton/" class="hover:underline me-4 md:me-6"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/p/Sols-lazer-B%C3%A9ton-100063872085099/" class="hover:underline me-4 md:me-6"><i class="fa-brands fa-facebook"></i></a>
+        </li>
       </ul>
     </div>
+
   </footer>
   <script src="script.js"></script>
 
