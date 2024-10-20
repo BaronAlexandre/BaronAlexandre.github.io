@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     modal.className = 'modal';
     modal.innerHTML = `
       <img loading="lazy" id="modal-img" class="mx-auto pb-8 block w-[90%] max-w-[700px]">
-      <p class="text-white text-center" id="modal-label"></p>
+      <p class="text-white text-center" id="modal-span"></p>
     `;
 
     document.body.appendChild(modal);
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const imgSrc = this.querySelector("img").src.replace("/reduce","");
                 const text = this.querySelector("p").innerText;
                 document.getElementById('modal-img').src = imgSrc;
-                document.getElementById('modal-label').innerText = text;
+                document.getElementById('modal-span').innerText = text;
                 modal.style.display = 'block';
             }
         });
