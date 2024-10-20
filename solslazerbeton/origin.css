@@ -61,7 +61,11 @@ input[type="radio"]:checked+.radio-button {
 #item-15:checked~.flex .radio-button:nth-child(15),
 #item-16:checked~.flex .radio-button:nth-child(16),
 #item-17:checked~.flex .radio-button:nth-child(17),
-#item-18:checked~.flex .radio-button:nth-child(18) {
+#item-18:checked~.flex .radio-button:nth-child(18),
+#item-19:checked~.flex .radio-button:nth-child(19),
+#item-20:checked~.flex .radio-button:nth-child(20),
+#item-21:checked~.flex .radio-button:nth-child(21),
+#item-22:checked~.flex .radio-button:nth-child(22) {
   background-color: #555;
   /* Choisir la couleur de votre choix */
 }
@@ -83,7 +87,11 @@ input[type="radio"]:checked+.radio-button {
 #item-15:checked~.cards #pic-15,
 #item-16:checked~.cards #pic-16,
 #item-17:checked~.cards #pic-17,
-#item-18:checked~.cards #pic-18 {
+#item-18:checked~.cards #pic-18,
+#item-19:checked~.cards #pic-19,
+#item-20:checked~.cards #pic-20,
+#item-21:checked~.cards #pic-21,
+#item-22:checked~.cards #pic-22 {
   transform: translatex(0) scale(1);
   opacity: 1;
   z-index: 1;
@@ -106,7 +114,11 @@ input[type="radio"]:checked+.radio-button {
 #item-15:checked~.cards #pic-15 img,
 #item-16:checked~.cards #pic-16 img,
 #item-17:checked~.cards #pic-17 img,
-#item-18:checked~.cards #pic-18 img {
+#item-18:checked~.cards #pic-18 img,
+#item-19:checked~.cards #pic-19 img,
+#item-20:checked~.cards #pic-20 img,
+#item-21:checked~.cards #pic-21 img,
+#item-22:checked~.cards #pic-22 img {
   box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
 }
 
